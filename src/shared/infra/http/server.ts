@@ -2,10 +2,10 @@ import express, { Request, Response, NextFunction} from 'express'
 import 'express-async-errors'
 import swaggerUi from 'swagger-ui-express'
 import YAML from 'yamljs'
-import './database'
-import './shared/container'
+import '../typeorm'
+import '../../container'
 import { router } from './routes';
-import { AppError } from './errors/AppError'
+import { AppError } from '../../errors/AppError'
 
 const app = express();
 
